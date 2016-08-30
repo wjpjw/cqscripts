@@ -1,6 +1,6 @@
 # World module: an abstraction of the game world.
 
-from engine.trigger import Trigger, Rule
+from core.trigger import Trigger, Rule
 
 class Unit:
     def __init__(self, name, damage, hp, attack_range, move_speed):
@@ -14,7 +14,6 @@ class Unit:
 class Player:
     def __init__(self, world):
         self.world=world
-        self.opponent=world.opponent
         self.units=[]
 
     def create_unit(self, unit):

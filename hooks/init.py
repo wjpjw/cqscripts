@@ -4,6 +4,8 @@ from game.register_triggers import register_triggers
 # This script is executed by GameLayer's init() function.
 # Initializes everything from here!
 
+
+
 # [0] global initial settings
 init_background_image()
 

@@ -9,6 +9,6 @@ class GameLayerDelegate:
 try:
   game_layer
 except NameError:
-  game_layer=GameLayer()
+  game_layer=GameLayerDelegate()
 else:
   print "sure, it was defined."
