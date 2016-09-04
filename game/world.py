@@ -1,24 +1,7 @@
+# -*- coding: utf-8 -*-  
+
 # World module: an abstraction of the game world.
-
-from core.trigger import Trigger, Rule
-
-class Unit:
-    def __init__(self, name, damage, hp, attack_range, move_speed):
-        self.name=name
-        self.damage=damage
-        self.hp=hp
-        self.attack_range=attack_range
-        self.move_speed=move_speed
-    pass
-
-class Player:
-    def __init__(self, world):
-        self.world=world
-        self.units=[]
-
-    def create_unit(self, unit):
-        self.units.append(unit)
-    pass
+from .player import Player
 
 class WorldState:
     PAREPARE=0
@@ -29,6 +12,5 @@ class World:
     def __init__(self):
         self.me=Player(self)
         self.opponent=Player(self)
-        self.trigger=Trigger(self)
         self.state=WorldState.PAREPARE
     pass

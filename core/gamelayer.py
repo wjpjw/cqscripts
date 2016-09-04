@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
+
 # Wrapping functions: explicitly specify arguments and provide doc for cpp exposed functions.
 from .stub import GameLayerDelegate,game_layer
 #game_layer is defined in cpp engine. If there is no cpp engine, forge it with a stub.
 
 def init_background_image(image="images/desert.jpg"):
-    ''' Inits the background image. '''
+    ''' Inits the background image. (cpp search path is DIR(cqscripts)/..)'''
     game_layer.initBackgroundImage(image)
     pass
 

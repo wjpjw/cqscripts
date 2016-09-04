@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 def merge_dicts(*dict_args):
     '''

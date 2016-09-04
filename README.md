@@ -15,6 +15,9 @@ The core.gameplayer module wraps all the cpp api, providing documentation plus d
 ## game
 The game package is where you customerize the game based on core and the cpp engine.
 
+## data
+The data package contains config files for game package. 
+
 ## hooks
 The cpp engine explicitly executes the three python files: init.py, update.py and touched.py. Their filename and path should not be changed.
 

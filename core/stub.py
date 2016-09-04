@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #stub creates everything that should be defined in cpp, so that these scripts can be tested before integration with cpp engine.
 
 class GameLayerDelegate:
