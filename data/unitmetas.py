@@ -31,8 +31,8 @@ unit_meta_dict={
         "attack_interval":      1.2,
         "collide_radius":       20.0,
     },
-    "metal storm": {
-        "name":                 "金属风暴",
+    "metal torrent": {
+        "name":                 "金属激流",
         "description":          "",
         "damage":               3.0,
         "hp":                   200.0,
@@ -45,5 +45,5 @@ unit_meta_dict={
 
 }
 
-cusile_unit_metas=["iron crawler", "metal storm"]
+the_heterogeneous_city_unit_metas=["iron crawler", "metal storm"]
 forest_unit_metas=["bear worrior", "elf archer"]
