@@ -10,10 +10,8 @@ init_background_image()
 
 # [1] world initialization
 world=World()
-
 player1=world.me
 player2=world.opponent
-
 player1.unlock_technology(technology_name="forest")
-for i in player1.unit_meta_pool:
-    print i
+
+create_label("测试",200,200)

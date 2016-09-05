@@ -19,3 +19,6 @@ def create_skeleton_unit(animation, x, y, model, height, scale=1.0, from_left_to
     '''  Creates a skeleton unit.'''
     game_layer.createSkeletonUnit(animation, x, y, model, height, scale, from_left_to_right, has_hp_bar)
     pass
+
+def create_label(name, x, y, size=20):
+    game_layer.createLabel(name, x, y, size)
