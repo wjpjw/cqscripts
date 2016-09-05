@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Wrapping functions: explicitly specify arguments and provide doc for cpp exposed functions.
-from .stub import GameLayerDelegate,game_layer
+#import sys
+#reload(sys)                      # reload 才能调用 setdefaultencoding 方法
+#sys.setdefaultencoding('utf-8')  # 设置 'utf-8'
+
 #game_layer is defined in cpp engine. If there is no cpp engine, forge it with a stub.
+#from .stub import GameLayerDelegate,game_layer
+
+# Wrapping functions: explicitly specify arguments and provide doc for cpp exposed functions.
+from __main__ import game_layer
 
 def init_background_image(image="images/desert.jpg"):
     ''' Inits the background image. (cpp search path is DIR(cqscripts)/..)'''

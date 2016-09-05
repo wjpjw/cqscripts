@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
+from cqscripts.game.world import *
+from cqscripts.core.gamelayer import *
 
-import sys
-reload(sys)                      # reload 才能调用 setdefaultencoding 方法
-sys.setdefaultencoding('utf-8')  # 设置 'utf-8'
-
-from core.gamelayer import init_background_image, create_skeleton_unit
-from game.world import *
-from game.register_triggers import register_triggers
 # This script is executed by GameLayer's init() function.
 # Initializes everything from here!
-
-
 
 # [0] global initial settings
 init_background_image()

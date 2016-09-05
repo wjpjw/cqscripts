@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from .technology import Technology
-import data.technologies
+import cqscripts.data.technologies
 
 class Player:
     def __init__(self, world):
@@ -11,7 +11,7 @@ class Player:
         self.load_technologies()  # Load data!
         self.unit_meta_pool=[]  # T=UnitMeta
     def load_technologies(self):
-        for k,v in data.technologies.technology_dict.items():
+        for k,v in cqscripts.data.technologies.technology_dict.items():
             self.technologies[k]=Technology(**v)
     def add_unit(self, unit):
         self.units.append(unit)
